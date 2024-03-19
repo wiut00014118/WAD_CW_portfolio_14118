@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "lCMr5uPNLADbbhv0s3xmCkOrnSybuxa0ZQ9tu2VXdmNDL0x9T6klD/syNvO1lFPTgybJrTC0JPNRkWO/4RX5xw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\eo\\Desktop\\WAD_CW_14118\\MoviesApp.14118\\WAD14118.API\\WAD14118.API\\WAD14118.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\eo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\eo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\eo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\eo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\eo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
