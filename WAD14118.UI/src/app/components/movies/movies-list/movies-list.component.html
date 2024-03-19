@@ -1,0 +1,28 @@
+<div class="container my-5">
+    <h1
+    class="mb-3">Movies</h1>
+    <table class="table" *ngIf="movies && movies.length >0">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>ImdbUrl</th>
+            <th>ImageUrl</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let Movie of movies"> 
+                <td> {{ Movie.Id}}</td>
+                <td> {{ Movie.Title}}</td>
+                <td> {{ Movie.Genre}}</td>
+                <td> {{ Movie.Rating}}</td>
+                <td> {{ Movie.ImdbUrl}}</td>
+                <td> {{ Movie.ImageUrl}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p *ngIf="! movies || movies.length <= 0">No Employees Found</p> 
+    </div>
