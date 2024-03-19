@@ -1,8 +1,8 @@
 export interface movie {
-Id:string;
-Title: string;
-Genre: string;
-Rating: number;
-ImdbUrl:string;
-ImageUrl:string;
+id:string;
+title: string;
+genre: string;
+rating: number;
+imdbUrl:string;
+imageUrl:string;
 }

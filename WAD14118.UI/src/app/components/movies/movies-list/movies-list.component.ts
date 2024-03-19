@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { movie } from '../../../models/movie.model';
+import { MoviesService } from '../../../services/movies.service';
 
 @Component({
   selector: 'app-movies-list',
@@ -8,19 +9,26 @@ import { movie } from '../../../models/movie.model';
 })
 export class MoviesListComponent {
   
-  movies: movie[]=[
-    {
-      Id:'gaegaeg',
-      Title:'Hello',
-      Genre:'Hottor',
-      Rating: 5 ,
-      ImdbUrl:'link',
-      ImageUrl:'link'
-}
+  movies: movie[]=
+  [
+    
   ];
   
-  constructor(){}
-    ngOnInit():void{
+  constructor(private moviesService: MoviesService ) { }
+
+  ngOnInit():void{
+    this.moviesService.getAllMovies()
+    .subscribe({
+      next: (movies) => {
+        this.movies=movies;
+        console.log(movies);
+      },
+      error: (response) => {
+        console.log(response);
+      },
+
+
+    })
       
     }
 }
