@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eo\\Desktop\\WAD_CW_14118\\MoviesApp.14118\\WAD14118.API\\WAD14118.API\\WAD14118.API.csproj": {}
+    "D:\\CW_WAD_14118\\WAD14118.API\\WAD14118.API\\WAD14118.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eo\\Desktop\\WAD_CW_14118\\MoviesApp.14118\\WAD14118.API\\WAD14118.API\\WAD14118.API.csproj": {
+    "D:\\CW_WAD_14118\\WAD14118.API\\WAD14118.API\\WAD14118.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eo\\Desktop\\WAD_CW_14118\\MoviesApp.14118\\WAD14118.API\\WAD14118.API\\WAD14118.API.csproj",
+        "projectUniqueName": "D:\\CW_WAD_14118\\WAD14118.API\\WAD14118.API\\WAD14118.API.csproj",
         "projectName": "WAD14118.API",
-        "projectPath": "C:\\Users\\eo\\Desktop\\WAD_CW_14118\\MoviesApp.14118\\WAD14118.API\\WAD14118.API\\WAD14118.API.csproj",
+        "projectPath": "D:\\CW_WAD_14118\\WAD14118.API\\WAD14118.API\\WAD14118.API.csproj",
         "packagesPath": "C:\\Users\\eo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eo\\Desktop\\WAD_CW_14118\\MoviesApp.14118\\WAD14118.API\\WAD14118.API\\obj\\",
+        "outputPath": "D:\\CW_WAD_14118\\WAD14118.API\\WAD14118.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,16 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
