@@ -16,11 +16,25 @@ export class MoviesService {
   constructor(private http: HttpClient) { }
 
 
-  getAllMovies():Observable<movie[]> {
-    return this.http.get<movie[]>(this.baseApiUrl+ '/api/Movies')
-  }
+    getAllMovies():Observable<movie[]> {
+      return this.http.get<movie[]>(this.baseApiUrl+ '/api/Movies')
+    }
 
-  addMovie(addMovieRequest:movie): Observable<movie>
-  {addMovieRequest.id = '00000000-0000-0000-0000-000000000000';
-    return this.http.post<movie>(this.baseApiUrl + '/api/Movies', addMovieRequest);}
+    addMovie(addMovieRequest:movie): Observable<movie>
+    {addMovieRequest.id = '00000000-0000-0000-0000-000000000000';
+      return this.http.post<movie>(this.baseApiUrl + '/api/Movies', addMovieRequest);}
+
+
+    getMovie(id: String): Observable<movie>{
+      return this.http.get<movie>(this.baseApiUrl + '/api/movies/' + id);
+    }
+
+    updateMovie(id:string, updateMovieRequest:movie) :Observable<movie> {
+
+      return this.http.put<movie>(this.baseApiUrl + '/api/movies/' + id, updateMovieRequest)
+    }
+
+    deleteMovie(id:String): Observable<movie>{
+     return this.http.delete<movie>(this.baseApiUrl+ '/api/movies/'+id);
+    }
 }

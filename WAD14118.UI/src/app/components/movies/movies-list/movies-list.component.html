@@ -10,6 +10,7 @@
             <th>Rating</th>
             <th>ImdbUrl</th>
             <th>ImageUrl</th>
+            <th> </th>
         </tr>
     </thead>
         <tbody>
@@ -20,6 +21,7 @@
                 <td> {{ Movie.rating}}</td>
                 <td> {{ Movie.imdbUrl}}</td>
                 <td> {{ Movie.imageUrl}}</td>
+                <td> <a [routerLink]="['/movies','edit', Movie.id ]">View</a></td>
             </tr>
         </tbody>
     </table>

@@ -7,12 +7,14 @@ import { MoviesListComponent } from './components/movies/movies-list/movies-list
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AddMovieComponent } from './components/movies/add-movie/add-movie.component';
 import { FormsModule } from '@angular/forms';
+import { EditmovieComponent } from './components/movies/editmovie/editmovie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesListComponent,
-    AddMovieComponent
+    AddMovieComponent,
+    EditmovieComponent
   ],
   imports: [
     BrowserModule,

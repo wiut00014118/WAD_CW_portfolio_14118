@@ -33,5 +33,59 @@ namespace WAD14118.API.Controllers
 
             return Ok(movieRequest);
         }
+
+
+        [HttpGet]
+        [Route("{id:Guid}")]
+
+        public async Task<IActionResult> GetMovie([FromRoute] Guid id)
+        {
+           var movie =
+                await _movieDbContext.Movies.FirstOrDefaultAsync(x => x.Id ==id);
+
+            if (movie == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(movie);
+        }
+
+
+        [HttpPut]
+        [Route("{id:Guid}")]
+        public async Task<IActionResult> UpdateMovie([FromRoute] Guid id, Movie updateMovieRequest)
+        {
+           var movie = await _movieDbContext.Movies.FindAsync(id);
+
+            if (movie == null) { NotFound (); }
+
+            movie.Title = updateMovieRequest.Title;
+            movie.Genre = updateMovieRequest.Genre;
+            movie.Rating = updateMovieRequest.Rating;
+            movie.ImdbUrl = updateMovieRequest.ImdbUrl;
+            movie.ImageUrl = updateMovieRequest.ImageUrl;
+
+            await _movieDbContext.SaveChangesAsync();
+
+            return Ok(movie);
+        }
+
+        [HttpDelete]
+        [Route("{id:Guid}")]
+
+        public async Task<IActionResult> DeleteMovie([FromRoute] Guid id)
+        {
+            var movie = await _movieDbContext.Movies.FindAsync(id);
+
+            if (movie == null)
+            {
+                return NotFound();
+            }
+            _movieDbContext.Movies.Remove(movie);
+            await _movieDbContext.SaveChangesAsync();
+
+            return Ok(movie);
+        }
     }
 }

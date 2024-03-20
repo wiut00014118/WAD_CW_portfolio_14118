@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { movie } from '../../../models/movie.model';
 import { MoviesService } from '../../../services/movies.service';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-movie',
@@ -18,7 +19,7 @@ export class AddMovieComponent implements OnInit {
     imageUrl: ''
   };
 
-  constructor(private movieService: MoviesService){
+  constructor(private movieService: MoviesService, private router:Router){
     
   }
   
@@ -30,7 +31,8 @@ export class AddMovieComponent implements OnInit {
     this.movieService.addMovie(this.addMovieRequest)
     .subscribe({
       next: (movie) =>{
-        console.log(movie);
+        this.router.navigate(['movies'])
+      
       }
     });
    }
