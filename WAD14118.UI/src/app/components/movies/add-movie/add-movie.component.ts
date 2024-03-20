@@ -27,6 +27,9 @@ export class AddMovieComponent implements OnInit {
     
   }
 
+  
+  
+
   addMovie() {
     this.movieService.addMovie(this.addMovieRequest)
     .subscribe({
