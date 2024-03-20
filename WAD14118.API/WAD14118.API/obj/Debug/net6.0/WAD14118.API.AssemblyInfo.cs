@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WAD14118.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8258d0f10c0a104c428e9e4744ebe05c8c1c3d00")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15308d24d1c129ff6dfab240018169463bba126a")]
 [assembly: System.Reflection.AssemblyProductAttribute("WAD14118.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WAD14118.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

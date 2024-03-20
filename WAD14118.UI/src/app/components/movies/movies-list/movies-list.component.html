@@ -4,27 +4,27 @@
     <table class="table" *ngIf="movies && movies.length >0">
     <thead>
         <tr>
-            <th>Id</th>
+            
             <th>Title</th>
             <th>Genre</th>
             <th>Rating</th>
             <th>ImdbUrl</th>
-            <th>ImageUrl</th>
+            <th>Poster</th>
             <th> </th>
         </tr>
     </thead>
         <tbody>
             <tr *ngFor="let Movie of movies"> 
-                <td> {{ Movie.id}}</td>
+                
                 <td> {{ Movie.title}}</td>
                 <td> {{ Movie.genre}}</td>
                 <td> {{ Movie.rating}}</td>
-                <td> {{ Movie.imdbUrl}}</td>
-                <td> {{ Movie.imageUrl}}</td>
-                <td> <a [routerLink]="['/movies','edit', Movie.id ]">View</a></td>
+                <td> <a href="{{Movie.imdbUrl}}">{{Movie.title}}</a></td>
+                <td><img [src]="Movie.imageUrl" alt="Poster"></td>
+                <td> <a class = "btn"[routerLink]="['/movies','edit', Movie.id ]">Edit</a></td>
             </tr>
         </tbody>
     </table>
 
-    <p *ngIf="! movies || movies.length <= 0">No Employees Found</p> 
+    <p *ngIf="! movies || movies.length <= 0">No MoviesFound</p> 
     </div>

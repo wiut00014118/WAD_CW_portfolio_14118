@@ -1,0 +1,34 @@
+img {
+    width: 200px;
+}
+
+td{
+    color: white;
+}
+th{
+    color: white;
+}
+
+.btn{
+    background-color: #0d6efd;
+}
+
+.btn:hover {
+    background-color: #0d4efd;
+}
+
+a{
+    text-decoration: none;
+    
+}
+a.btn{
+    color: azure;
+}
+
+
+
+
+
+ td{
+    vertical-align:middle;
+ }

@@ -1,0 +1,17 @@
+.navbar{
+    background: #272727;
+    
+    
+} 
+.container-fluid{
+   padding-left: 150px;
+}
+
+a.navbar-brand{
+    color: white;
+}
+
+
+.navbar-nav .nav-link.active{
+    color: white;
+}
